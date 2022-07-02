@@ -55,7 +55,7 @@ build and push images from following repos onto your docker registry
 
 
 ### set up the cluster
-Follow the guides in [this repo]() to set up `GitOps` based infrastructure for your platform (APIs,DataBases, Backup_services, and test, dev, prd environment configuration)
+Follow the guides in [this repo](https://github.com/karname-interview/applications) to set up `GitOps` based infrastructure for your platform (APIs,DataBases, Backup_services, and test, dev, prd environment configuration)
 
 
 
