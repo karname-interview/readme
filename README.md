@@ -67,5 +67,18 @@ clone following repos and put them in your gitlab
 Follow the guides in [this repo](https://github.com/karname-interview/applications) to set up `GitOps` based infrastructure for your platform (APIs,DataBases, Backup_services, and test, dev, prd environment configuration)
 
 
+### notes about this setup 
+
+- I had only one day and few hours of sleep, so i may have forget to mention a thing or two! so I suggest a meeting in which i can describe the platform and how it works
+
+- in this scenario all three environments (prd,stg,dev) are assumed to be in the same cluster (seperated by their namespaces). but this platform has no such limit and you can easily deploy them on different clustes should you want to, only need to start a seperate ArgoCD in each cluster
+
+- take a good care at domains set for different modules (domains set in helm chart or configured in ingress-patchs).
+
+- I tried to be as platform-agnostic as i could, but then again, i only had one day so i may have forgot to consider a thing or two!
+
+
+### contact me 
+email: letmemakenewone@gmail.com 
 
 
