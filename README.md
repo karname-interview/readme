@@ -53,6 +53,15 @@ build and push images from following repos onto your docker registry
 
 `gcr.io/kaniko-project/executor:debug` as `$DOCKER_REG_URL/kaniko:debug`
 
+`k8s.gcr.io/kustomize/kustomize:v4.4.1` as `$DOCKER_REG_URL/infra/kustomize:1.0.0`
+
+### Repos to clone 
+clone following repos and put them in your gitlab
+- [dummy-api](https://github.com/karname-interview/dummy-api): repo contains simple CRUD api and uses postgres as a database (workload repo) (should run CICD atleast once)
+- [psql_backup](https://github.com/karname-interview/psql_backup): repo for making backups from psql of the prd environment (should run CICD atleat once)
+- [apps](https://github.com/karname-interview/apps): ArgoCD's App of Apps repo
+- [manifests](https://github.com/karname-interview/manifests): manifests for dummy-api (repo name should match the description given Preparation section of this Readme )
+- [dummy-rsc](https://github.com/karname-interview/dummy-rsc): manifest for dummy service resources (i.e. postgres for each environment)
 
 ### set up the cluster
 Follow the guides in [this repo](https://github.com/karname-interview/applications) to set up `GitOps` based infrastructure for your platform (APIs,DataBases, Backup_services, and test, dev, prd environment configuration)
